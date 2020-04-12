@@ -14,26 +14,49 @@ Custom Elements Lefe cycle methods
 
 2. Shadow DOW 
 
+Used for Self-contained Components 
 
+Encapsulated styles and markup 
+Create with element.attachShadow({mode:open})
 
+Creates a 'shadowRoot' that we can reference and interact with 
 
 
 3. HTML Templates 
+
+define the encapusulated markup 
+
+Template tag stores markup on page 
+
+Include both HTML AND CSS 
+
+Slots - Dynamic / Custom Text 
+
 
 -->
 
 
 <html lang="en">
+
+<!-- Global Style  -->
+<style>
+    h1{
+        color: black 
+    }
+</style>
 <head>
-    <script src='index.js'></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Components</title>
     
 </head>
 <body>
-    <h1>Hello Web Components!</h1>
-    <app-drawer> Here </app-drawer>
+    <h1>Hello Web Components! - Global Styling </h1>
+    <!-- <app-drawer ></app-drawer> -->
+
+    <user-card name="John Doe"></user-card>
+    <user-card name="Jane Doe"></user-card>
+    <script src='index.js'></script>
 
 </body>
 </html>
